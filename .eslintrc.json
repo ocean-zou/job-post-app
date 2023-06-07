@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals","airbnb", "airbnb/hooks"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope":0,
+    "semi": [ "error", "never" ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+  }
 }
