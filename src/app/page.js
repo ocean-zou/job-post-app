@@ -1,9 +1,18 @@
 'use client'
 
 import Image from 'next/image'
+import { useContext } from 'react'
 import styles from './page.module.css'
+import Redirecting from '@/components/Redirecting/Redirecting'
+import { appContext } from '@/context/appContext'
 
 export default function Home() {
+  const { user } = useContext(appContext)
+
+  if (user === 'test') {
+    return <Redirecting />
+  }
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
