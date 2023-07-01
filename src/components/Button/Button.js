@@ -1,7 +1,18 @@
 import { StyledButton } from './Button.styles'
 
-export default function Button({ children }) {
+export default function Button({
+  children,
+  href,
+  className,
+  ...props
+}) {
   return (
-    <StyledButton>{children}</StyledButton>
+    <StyledButton
+      {...props}
+      className={className}
+      as={href?.length ? 'a' : 'button'}
+      href={href}
+    >{children}
+    </StyledButton>
   )
 }
