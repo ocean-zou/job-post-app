@@ -8,6 +8,10 @@ export const StyledButton = styled.button`
     cursor:pointer;
     border-radius: ${(props) => props.theme.borderRadius};
     transition:background-color 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     &:hover{
       background-color: #0e7c86;
     }
@@ -25,3 +29,14 @@ export const StyledButton = styled.button`
           }
         `}
   `
+export const StartElement=styled.span`
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+`
+
+export const EndElement=styled.span`
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+`
