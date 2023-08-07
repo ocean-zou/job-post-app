@@ -12,5 +12,6 @@ const reducer = (state, action) => {
       alertMessage: action.payload.msg,
     }
   }
+  return state
 }
 export default reducer

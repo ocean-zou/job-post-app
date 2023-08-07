@@ -1,8 +1,7 @@
 'use client'
 
-import { Container } from './page.style'
+import { Container, Navigation } from './page.styles'
 import Hero from '../../components/Hero/Hero'
-import Navigation from '../../components/Navigation/Navigation'
 import Logo from '../../components/Logo/Logo'
 import { useAppContext } from '@/context/appContext'
 

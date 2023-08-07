@@ -1,13 +1,14 @@
 'use client'
-import {LayoutContainer, DrawerContainer, MainContainer} from "./layout.styles"
-import Navigation from "../../components/Navigation/Navigation"
-import Drawer from "@/components/Drawer/Drawer"
+
+import { LayoutContainer, DrawerContainer, MainContainer } from './layout.styles'
+import Navigation from '../../components/Navigation/Navigation'
+import Drawer from '@/components/Drawer/Drawer'
 
 export default function DashboardLayout({ children }) {
   return (
     <LayoutContainer>
       <DrawerContainer isOpen>
-        <Drawer/>
+        <Drawer />
       </DrawerContainer>
       <MainContainer>
         <Navigation>nav</Navigation>
