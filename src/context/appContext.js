@@ -22,7 +22,7 @@ export function AppProvider({ children }) {
       const { user, token } = data
       dispatch({
         type: 'SETUP_USER_SUCCESS',
-        payload: {user},
+        payload: { user },
       })
       addUserToLocalStorage({ user, token })
     } catch (error) {

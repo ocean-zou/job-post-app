@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import {
   Container, FormTitle, Form, StyledButton as Button, Span,
@@ -17,13 +17,13 @@ export default function RegisterPage() {
   })
 
   const router = useRouter()
-  const { user,setupUser } = useAppContext()
-  useEffect(()=>{
-    if( user){
-      router.push("/dashboard") 
+  const { user, setupUser } = useAppContext()
+  useEffect(() => {
+    if (user) {
+      router.push('/dashboard')
     }
-  },[user, router])
-  
+  }, [user, router])
+
   const handleOnSubmit = (event) => {
     event.preventDefault()
     const { name, email, password } = formValues

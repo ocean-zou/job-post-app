@@ -29,13 +29,13 @@ export const StyledButton = styled.button`
           }
         `}
   `
-export const StartElement=styled.span`
+export const StartElement = styled.span`
   display: flex;
   align-items: center;
   margin-right: 8px;
 `
 
-export const EndElement=styled.span`
+export const EndElement = styled.span`
   display: flex;
   align-items: center;
   margin-left: 8px;

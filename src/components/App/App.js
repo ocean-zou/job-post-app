@@ -9,8 +9,8 @@ const light = {
     primary: 'rgb(44,177,188)',
     secondary: '#87eaf2',
     grey: 'rgb(72,101,129)',
-    white:'#fff',
-    lightgrey:'rgba(0,0,0,0.1)',
+    white: '#fff',
+    lightgrey: 'rgba(0,0,0,0.1)',
   },
   borderRadius: '2px',
 }

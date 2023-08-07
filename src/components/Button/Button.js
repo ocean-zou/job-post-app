@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { StyledButton,StartElement, EndElement } from './Button.styles'
+import { StyledButton, StartElement, EndElement } from './Button.styles'
 
 export default function Button({
   children,
@@ -18,13 +18,15 @@ export default function Button({
     >
       {startIcon && (
         <StartElement>
-          <Image src={startIcon} width={14} height={14}/>
-        </StartElement>)}
+          <Image src={startIcon} width={14} height={14} />
+        </StartElement>
+      )}
       {children}
       {endIcon && (
         <EndElement>
-          <Image src={endIcon} width={14} height={14}/>
-        </EndElement>)}
+          <Image src={endIcon} width={14} height={14} />
+        </EndElement>
+      )}
     </StyledButton>
   )
 }
